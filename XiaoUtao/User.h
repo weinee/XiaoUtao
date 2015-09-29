@@ -12,8 +12,8 @@
 @property(copy, nonatomic)NSString *userSex;
 //使用数字类
 @property(strong, nonatomic)NSNumber *userAge;
-//文件类型
-@property(strong, nonatomic)BmobFile *userHeadPhoto;
+//头像
+@property(copy, nonatomic)NSString *avatar;
 //是否开店
 @property(assign, nonatomic)BOOL *isShoper;
 //地理位置,经纬度
