@@ -9,6 +9,6 @@
 #import "Post.h"
 
 @implementation Post
-@synthesize postContent, postTitle, postType, goodsPrice, goodsNumber, goodsPictures, author, collect;
+@synthesize postContent, postTitle, postType, goodsPrice, goodsNumber, goodsPictures, author, collect, postGoodsType, goodsDegree;
 
 @end

@@ -22,6 +22,8 @@
 @property(strong, nonatomic)BmobFile *shopPicture;
 //小店详细地址
 @property(copy, nonatomic)NSString *shopAdress;
+//点赞的数量
+@property(strong, nonatomic)NSNumber *shopFavour;
 
 //关联
 //管理者，开店的用户

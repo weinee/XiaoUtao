@@ -24,7 +24,9 @@
 @property(strong, nonatomic)NSArray *goodsPictures;
 
 //物品类型
-@property(strong, nonatomic)NSNumber *goodsType;
+@property(strong, nonatomic)NSNumber *postGoodsType;
+//商品新旧程度
+@property(strong, nonatomic)NSNumber *goodsDegree;
 
 //关联
 //帖子作者
