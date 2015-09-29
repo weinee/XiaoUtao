@@ -48,7 +48,7 @@ enum PostType
 };
 typedef enum PostType PostType;
 const NSArray *___PostType;
-#define cPostTypeGet (___PostType==nil?___PostType=[[NSArray alloc]initWithObject:\
+#define cPostTypeGet (___PostType==nil?___PostType=[[NSArray alloc]initWithObjects:\
 @"购买",\
 @"出售",nil]:___PostType)
 #define cPostTypeString(type) ([cPostTypeGet objectAtIndex:type])

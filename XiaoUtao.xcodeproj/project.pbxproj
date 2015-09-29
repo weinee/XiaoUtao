@@ -57,6 +57,7 @@
 		784778171BB946D800F0A3EA /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		784778181BB946D800F0A3EA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		784778191BB946D800F0A3EA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		78F076321BBA371700252CF8 /* enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enum.h; sourceTree = "<group>"; };
 		B78F469268A13223BCC33B1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E764A0F4E799C3E224D7F15D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +121,7 @@
 				784777ED1BB9281100F0A3EA /* Images.xcassets */,
 				784777EF1BB9281100F0A3EA /* LaunchScreen.xib */,
 				784777E01BB9281100F0A3EA /* Supporting Files */,
+				78F076321BBA371700252CF8 /* enum.h */,
 			);
 			path = XiaoUtao;
 			sourceTree = "<group>";
