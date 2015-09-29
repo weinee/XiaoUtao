@@ -81,7 +81,7 @@ enum GoodsDegree
 typedef enum GoodsDegree GoodsDegree;
 const NSArray *___GoodsDegree;
 #define cGoodsDegreeGet (___GoodsDegree==nil?___GoodsDegree=[[NSArray alloc]initWithObjects:\
-@"半成新",\
+@"五成新",\
 @"六成新",\
 @"七成新",\
 @"八成新",\
