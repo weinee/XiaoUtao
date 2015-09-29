@@ -8,24 +8,24 @@
 
 #ifndef XiaoUtao_enum_h
 #define XiaoUtao_enum_h
-//商品种类
-enum GoodsType
+//帖子商品种类
+enum PostGoodsType
 {
-    GoodsTypeVehicles=0,
-    GoodsTypePhone,
-    GoodsTypeComputer,
-    GoodsTypeDigital,
-    GoodsTypeElectrical,
-    GoodsTypeDigitalAccessories,
-    GoodsTypeExercise,
-    GoodsTypeClothesUmbrellaCap,
-    GoodsTypeBook,
-    GoodsTypeLiveEntertainment,
-    GoodsTypeOthers
+    PostGoodsTypeVehicles=0,
+    PostGoodsTypePhone,
+    PostGoodsTypeComputer,
+    PostGoodsTypeDigital,
+    PostGoodsTypeElectrical,
+    PostGoodsTypeDigitalAccessories,
+    PostGoodsTypeExercise,
+    PostGoodsTypeClothesUmbrellaCap,
+    PostGoodsTypeBook,
+    PostGoodsTypeLiveEntertainment,
+    PostGoodsTypeOthers
 };
-typedef enum GoodsType GoodsType;
-const NSArray *___GoodsType;
-#define cGoodsTypeGet (___GoodsType==nil?___GoodsType=[[NSArray alloc]initWithObjects:\
+typedef enum PostGoodsType PostGoodsType;
+const NSArray *___PostGoodsType;
+#define cPostGoodsTypeGet (___PostGoodsType==nil?___PostGoodsType=[[NSArray alloc]initWithObjects:\
 @"校园代步",\
 @"手机",\
 @"电脑",\
@@ -36,9 +36,9 @@ const NSArray *___GoodsType;
 @"衣物伞帽",\
 @"图书教材",\
 @"生活娱乐",\
-@"其他",nil]:___GoodsType)
-#define cGoodsTypeString(type) ([cGoodsTypeGet objectAtIndex:type])
-#define cGoodsTypeEnum(string) ([cGoodsTypeGet indexOfObject:string])
+@"其他",nil]:___PostGoodsType)
+#define cPostGoodsTypeString(type) ([cPostGoodsTypeGet objectAtIndex:type])
+#define cPostGoodsTypeEnum(string) ([cPostGoodsTypeGet indexOfObject:string])
 
 //帖子种类
 enum PostType
@@ -68,6 +68,28 @@ const NSArray *___PostStatus;
 #define cPostStatusString(type) ([cPostStatusGet objectAtIndex:type])
 #define cPostStatusEnum(string) ([cPostStatusGet indexOfObject:string])
 
+//二手物品的新旧程度
+enum GoodsDegree
+{
+    GoodsDegreeFive=0,
+    GoodsDegreeSix,
+    GoodsDegreeSeven,
+    GoodsDegreeEight,
+    GoodsDegreeNine,
+    GoodsDegreeTen
+};
+typedef enum GoodsDegree GoodsDegree;
+const NSArray *___GoodsDegree;
+#define cGoodsDegreeGet (___GoodsDegree==nil?___GoodsDegree=[[NSArray alloc]initWithObjects:\
+@"半成新",\
+@"六成新",\
+@"七成新",\
+@"八成新",\
+@"九成新",\
+@"全新",nil]:___GoodsDegree)
+#define cGoodsDegreeString(type) ([cGoodsDegreeGet objectAtIndex:type])
+#define cGoodsDegreeEnum(string) ([cPostStatusGet indexOfObject:string])
+
 //店铺状态
 enum ShopStatus
 {
@@ -81,6 +103,24 @@ const NSArray *___ShopStatus;
 @"未营业",nil]:___ShopStatus)
 #define cShopStatusString(type) ([cShopStatusGet objectAtIndex:type])
 #define cShopStatusEnum(string) ([cShopStatusGet indexOfObject:string])
+
+//店铺商品种类
+enum GoodsType
+{
+    GoodsTypeFoot=0,
+    GoodsTypeDrink,
+    GoodsTypePlay,
+    GoodsTypeSupply
+};
+typedef enum GoodsType GoodsType;
+const NSArray *___GoodsType;
+#define cGoodsTypeGet (___GoodsType==nil?___GoodsType=[[NSArray alloc]initWithObjects:\
+@"吃",\
+@"喝",\
+@"玩",\
+@"用",nil]:___GoodsType)
+#define cGoodsTypeString(type) ([cGoodsTypeGet objectAtIndex:type])
+#define cGoodsTypeEnum(string) ([cGoodsTypeGet indexOfObject:string])
 
 //订单状态
 enum OrderStatus
@@ -99,5 +139,6 @@ const NSArray *___OrderStatus;
 @"完成",nil]:___OrderStatus)
 #define cOrderStatusString(type) ([cOrderStatusGet objectAtIndex:])
 #define cOrderStatusEnum(string) ([cOrderStatusGet indexOfObject:string])
+
 
 #endif
