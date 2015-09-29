@@ -61,7 +61,7 @@
 	
 	
 //	修改帖子作者
-	BmobQuery *pQuery = [BmobQuery queryWithClassName:@"post"];
+	/*BmobQuery *pQuery = [BmobQuery queryWithClassName:@"post"];
 	[pQuery getObjectInBackgroundWithId:@"c4bdde7d43" block:^(BmobObject *object, NSError *error) {
 		if (error) {
 			NSLog(@"%@", error);
@@ -71,7 +71,9 @@
 			[object setObject:user forKey:@"author"];
 		}
 	}];
-	
+	*/
+    
+    NSLog(@"%@",cPostStatusGet);
 }
 
 - (void)didReceiveMemoryWarning {

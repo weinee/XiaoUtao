@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "enum.h"
 @interface ViewController : UIViewController
 
 

@@ -62,7 +62,7 @@ enum PostStatus
 };
 typedef enum PostStatus PostStatus;
 const NSArray *___PostStatus;
-#define cPostStatusGet (___PostStatus=nil?___PostStatus=[[NSArray alloc]initWithObjects:\
+#define cPostStatusGet (___PostStatus==nil?___PostStatus=[[NSArray alloc]initWithObjects:\
 @"已出售",\
 @"未出售",nil]:___PostStatus)
 #define cPostStatusString(type) ([cPostStatusGet objectAtIndex:type])
