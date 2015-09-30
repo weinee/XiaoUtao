@@ -144,14 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01F2C3291BBB70B100BCD15F /* MyShop */ = {
+		01F2C3291BBB70B100BCD15F /* SM */ = {
 			isa = PBXGroup;
 			children = (
 				01F2C32D1BBB70DB00BCD15F /* RegistShop.h */,
 				01F2C32E1BBB70DB00BCD15F /* RegistShop.m */,
 				01F2C32A1BBB70BB00BCD15F /* image_myshop */,
 			);
-			name = MyShop;
+			name = SM;
 			sourceTree = "<group>";
 		};
 		01F2C32A1BBB70BB00BCD15F /* image_myshop */ = {
@@ -222,7 +222,7 @@
 			children = (
 				01F2C3341BBB7E5800BCD15F /* enum_head.pch */,
 				01F2C3301BBB70FE00BCD15F /* 第三方 */,
-				01F2C3291BBB70B100BCD15F /* MyShop */,
+				01F2C3291BBB70B100BCD15F /* SM */,
 				784778061BB92E8E00F0A3EA /* Model */,
 				784777E41BB9281100F0A3EA /* AppDelegate.h */,
 				784777E51BB9281100F0A3EA /* AppDelegate.m */,

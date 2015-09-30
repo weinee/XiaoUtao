@@ -16,17 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //colorWithRed:155/255 green:155/255 blue:155/255 alpha:0.7
+    self.view.backgroundColor=[UIColor colorWithRed:120/255.0 green:230/255.0 blue:295/255.0 alpha:0.6];
+    [self initViews];
 }
-
-
 
 //创建子视图
 -(void)initViews
 {
     
     //创建头像图视图
-    _headshot=[[UIImageView alloc] initWithFrame:CGRectMake(WIDTH/2-30, 120, 60, 80)];
+    _headshot=[[UIImageView alloc] initWithFrame:CGRectMake(WIDTH/2-30, 120, 90, 120)];
     //设置默认图片
     _headshot.image=[UIImage imageNamed:@"headshot_default.png"];
     //设置圆角
@@ -39,13 +39,13 @@
     [self.view addSubview:_headshot];
     
     //创建提示标签
-    _labTip=[[UILabel alloc] initWithFrame:CGRectMake(WIDTH/2-10, 90, 150, 40)];
+    _labTip=[[UILabel alloc] initWithFrame:CGRectMake(WIDTH/2-10, _headshot.bottom+5, 150, 40)];
     _labTip.text=@"设置你的U店铺LOGO";
     _labTip.textColor=[UIColor grayColor];
     [self.view addSubview:_labTip];
     
     //创建视图
-    _txtView=[[UIView alloc] initWithFrame:CGRectMake(0, 150, WIDTH, 80)];
+    _txtView=[[UIView alloc] initWithFrame:CGRectMake(0, 250, WIDTH, 80)];
     _txtView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:_txtView];
     

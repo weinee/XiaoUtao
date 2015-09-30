@@ -5,11 +5,11 @@
 //  Created by 费惠 on 15/9/29.
 //  Copyright (c) 2015年 weinee. All rights reserved.
 //
+#import "UIViewExt.h"
+
 
 #ifndef XiaoUtao_enum_h
 #define XiaoUtao_enum_h
-
-
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
 //帖子商品种类
