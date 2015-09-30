@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		01F2C32F1BBB70DB00BCD15F /* RegistShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2C32E1BBB70DB00BCD15F /* RegistShop.m */; };
 		01F2C3331BBB711E00BCD15F /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2C3321BBB711E00BCD15F /* UIViewExt.m */; };
-		7827DF651BBBFE3A00375D00 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF641BBBFE3A00375D00 /* SBViewController.m */; };
-		7827DF681BBBFE4600375D00 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF671BBBFE4600375D00 /* IMViewController.m */; };
-
 		01F2C3361BBBB75100BCD15F /* head_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3351BBBB75100BCD15F /* head_photo.png */; };
 		01F2C3381BBBC55400BCD15F /* cinema.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3371BBBC55400BCD15F /* cinema.png */; };
-
-
+		7827DF651BBBFE3A00375D00 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF641BBBFE3A00375D00 /* SBViewController.m */; };
+		7827DF681BBBFE4600375D00 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF671BBBFE4600375D00 /* IMViewController.m */; };
+		7827DF6B1BBC379B00375D00 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF6A1BBC379B00375D00 /* SMViewController.m */; };
 		784777E31BB9281100F0A3EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 784777E21BB9281100F0A3EA /* main.m */; };
 		784777E61BB9281100F0A3EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784777E51BB9281100F0A3EA /* AppDelegate.m */; };
 		784777E91BB9281100F0A3EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784777E81BB9281100F0A3EA /* ViewController.m */; };
@@ -77,6 +75,8 @@
 		7827DF641BBBFE3A00375D00 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
 		7827DF661BBBFE4600375D00 /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
 		7827DF671BBBFE4600375D00 /* IMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
+		7827DF691BBC379B00375D00 /* SMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
+		7827DF6A1BBC379B00375D00 /* SMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		784777DD1BB9281100F0A3EA /* XiaoUtao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoUtao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784777E11BB9281100F0A3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784777E21BB9281100F0A3EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -173,6 +173,8 @@
 		01F2C3291BBB70B100BCD15F /* SM */ = {
 			isa = PBXGroup;
 			children = (
+				7827DF691BBC379B00375D00 /* SMViewController.h */,
+				7827DF6A1BBC379B00375D00 /* SMViewController.m */,
 				01F2C32D1BBB70DB00BCD15F /* RegistShop.h */,
 				01F2C32E1BBB70DB00BCD15F /* RegistShop.m */,
 				01F2C32A1BBB70BB00BCD15F /* image_myshop */,
@@ -517,6 +519,7 @@
 				784777E61BB9281100F0A3EA /* AppDelegate.m in Sources */,
 				78EFF0491BBBAE9400AE90BE /* BaseNavigationController.m in Sources */,
 				784777E31BB9281100F0A3EA /* main.m in Sources */,
+				7827DF6B1BBC379B00375D00 /* SMViewController.m in Sources */,
 				78EFF0461BBBAE3900AE90BE /* CustomMainTabBarController.m in Sources */,
 				7847780F1BB930DD00F0A3EA /* Shop.m in Sources */,
 				784778151BB9386200F0A3EA /* Order.m in Sources */,
