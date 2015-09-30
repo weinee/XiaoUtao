@@ -8,6 +8,8 @@
 
 #ifndef XiaoUtao_enum_h
 #define XiaoUtao_enum_h
+
+
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
 //帖子商品种类
@@ -26,8 +28,8 @@ enum PostGoodsType
     PostGoodsTypeOthers
 };
 typedef enum PostGoodsType PostGoodsType;
-const NSArray *___PostGoodsType;
-#define cPostGoodsTypeGet (___PostGoodsType==nil?___PostGoodsType=[[NSArray alloc]initWithObjects:\
+static const NSArray *__PostGoodsType;
+#define cPostGoodsTypeGet (__PostGoodsType==nil?__PostGoodsType=[[NSArray alloc]initWithObjects:\
 @"校园代步",\
 @"手机",\
 @"电脑",\
@@ -38,7 +40,7 @@ const NSArray *___PostGoodsType;
 @"衣物伞帽",\
 @"图书教材",\
 @"生活娱乐",\
-@"其他",nil]:___PostGoodsType)
+@"其他",nil]:__PostGoodsType)
 #define cPostGoodsTypeString(type) ([cPostGoodsTypeGet objectAtIndex:type])
 #define cPostGoodsTypeEnum(string) ([cPostGoodsTypeGet indexOfObject:string])
 
@@ -49,10 +51,10 @@ enum PostType
     PostTypeSell
 };
 typedef enum PostType PostType;
-const NSArray *___PostType;
-#define cPostTypeGet (___PostType==nil?___PostType=[[NSArray alloc]initWithObjects:\
+static const NSArray *__PostType;
+#define cPostTypeGet (__PostType==nil?__PostType=[[NSArray alloc]initWithObjects:\
 @"购买",\
-@"出售",nil]:___PostType)
+@"出售",nil]:__PostType)
 #define cPostTypeString(type) ([cPostTypeGet objectAtIndex:type])
 #define cPostTypeEnum(string) ([cPostTypeGet indexOfObject:string])
 
@@ -63,10 +65,10 @@ enum PostStatus
     PostStatusUnsold
 };
 typedef enum PostStatus PostStatus;
-const NSArray *___PostStatus;
-#define cPostStatusGet (___PostStatus==nil?___PostStatus=[[NSArray alloc]initWithObjects:\
+static const NSArray *__PostStatus;
+#define cPostStatusGet (__PostStatus==nil?__PostStatus=[[NSArray alloc]initWithObjects:\
 @"已出售",\
-@"未出售",nil]:___PostStatus)
+@"未出售",nil]:__PostStatus)
 #define cPostStatusString(type) ([cPostStatusGet objectAtIndex:type])
 #define cPostStatusEnum(string) ([cPostStatusGet indexOfObject:string])
 
@@ -81,14 +83,14 @@ enum GoodsDegree
     GoodsDegreeTen
 };
 typedef enum GoodsDegree GoodsDegree;
-const NSArray *___GoodsDegree;
-#define cGoodsDegreeGet (___GoodsDegree==nil?___GoodsDegree=[[NSArray alloc]initWithObjects:\
+static const NSArray *__GoodsDegree;
+#define cGoodsDegreeGet (__GoodsDegree==nil?__GoodsDegree=[[NSArray alloc]initWithObjects:\
 @"五成新",\
 @"六成新",\
 @"七成新",\
 @"八成新",\
 @"九成新",\
-@"全新",nil]:___GoodsDegree)
+@"全新",nil]:__GoodsDegree)
 #define cGoodsDegreeString(type) ([cGoodsDegreeGet objectAtIndex:type])
 #define cGoodsDegreeEnum(string) ([cPostStatusGet indexOfObject:string])
 
@@ -99,10 +101,10 @@ enum ShopStatus
     ShopStatusClosed
 };
 typedef enum ShopStatus ShopStatus;
-const NSArray *___ShopStatus;
-#define cShopStatusGet (___ShopStatus==nil?___ShopStatus=[[NSArray alloc]initWithObjects:\
+static const NSArray *__ShopStatus;
+#define cShopStatusGet (__ShopStatus==nil?__ShopStatus=[[NSArray alloc]initWithObjects:\
 @"营业中",\
-@"未营业",nil]:___ShopStatus)
+@"未营业",nil]:__ShopStatus)
 #define cShopStatusString(type) ([cShopStatusGet objectAtIndex:type])
 #define cShopStatusEnum(string) ([cShopStatusGet indexOfObject:string])
 
@@ -115,12 +117,12 @@ enum GoodsType
     GoodsTypeSupply
 };
 typedef enum GoodsType GoodsType;
-const NSArray *___GoodsType;
-#define cGoodsTypeGet (___GoodsType==nil?___GoodsType=[[NSArray alloc]initWithObjects:\
+static const NSArray *__GoodsType;
+#define cGoodsTypeGet (__GoodsType==nil?__GoodsType=[[NSArray alloc]initWithObjects:\
 @"吃",\
 @"喝",\
 @"玩",\
-@"用",nil]:___GoodsType)
+@"用",nil]:__GoodsType)
 #define cGoodsTypeString(type) ([cGoodsTypeGet objectAtIndex:type])
 #define cGoodsTypeEnum(string) ([cGoodsTypeGet indexOfObject:string])
 
@@ -133,12 +135,12 @@ enum OrderStatus
     OrderStatusFinsih
 };
 typedef enum OrderStatus OrderStatus;
-const NSArray *___OrderStatus;
-#define cOrderStatusGet (___OrderStatus==nil?___OrderStatus=[[NSArray alloc]initWithObjects:\
+static const NSArray *__OrderStatus;
+#define cOrderStatusGet (__OrderStatus==nil?__OrderStatus=[[NSArray alloc]initWithObjects:\
 @"未付款",\
 @"已付款",\
 @"取消",\
-@"完成",nil]:___OrderStatus)
+@"完成",nil]:__OrderStatus)
 #define cOrderStatusString(type) ([cOrderStatusGet objectAtIndex:])
 #define cOrderStatusEnum(string) ([cOrderStatusGet indexOfObject:string])
 

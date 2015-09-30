@@ -59,6 +59,7 @@
 		01F2C32E1BBB70DB00BCD15F /* RegistShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistShop.m; sourceTree = "<group>"; };
 		01F2C3311BBB711E00BCD15F /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		01F2C3321BBB711E00BCD15F /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		01F2C3341BBB7E5800BCD15F /* enum_head.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enum_head.pch; sourceTree = "<group>"; };
 		1461A726DC1813575D195523 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		784777DD1BB9281100F0A3EA /* XiaoUtao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoUtao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784777E11BB9281100F0A3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +84,7 @@
 		784778171BB946D800F0A3EA /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		784778181BB946D800F0A3EA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		784778191BB946D800F0A3EA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		78F076321BBA371700252CF8 /* enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enum.h; sourceTree = "<group>"; };
+		78F076321BBA371700252CF8 /* enum_head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enum_head.h; sourceTree = "<group>"; };
 		78F076331BBA676100252CF8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		78F076351BBA676D00252CF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		78F076371BBA677500252CF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -219,6 +220,7 @@
 		784777DF1BB9281100F0A3EA /* XiaoUtao */ = {
 			isa = PBXGroup;
 			children = (
+				01F2C3341BBB7E5800BCD15F /* enum_head.pch */,
 				01F2C3301BBB70FE00BCD15F /* 第三方 */,
 				01F2C3291BBB70B100BCD15F /* MyShop */,
 				784778061BB92E8E00F0A3EA /* Model */,
@@ -230,7 +232,7 @@
 				784777ED1BB9281100F0A3EA /* Images.xcassets */,
 				784777EF1BB9281100F0A3EA /* LaunchScreen.xib */,
 				784777E01BB9281100F0A3EA /* Supporting Files */,
-				78F076321BBA371700252CF8 /* enum.h */,
+				78F076321BBA371700252CF8 /* enum_head.h */,
 			);
 			path = XiaoUtao;
 			sourceTree = "<group>";
@@ -565,6 +567,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XiaoUtao/enum_head.pch";
 				INFOPLIST_FILE = XiaoUtao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -580,6 +583,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XiaoUtao/enum_head.pch";
 				INFOPLIST_FILE = XiaoUtao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

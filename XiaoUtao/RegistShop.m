@@ -18,9 +18,13 @@
     [super viewDidLoad];
     
 }
+
+
+
 //创建子视图
 -(void)initViews
 {
+    
     //创建头像图视图
     _headshot=[[UIImageView alloc] initWithFrame:CGRectMake(WIDTH/2-30, 120, 60, 80)];
     //设置默认图片
@@ -61,6 +65,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+ 
+ 
 /*
 #pragma mark - Navigation
 
