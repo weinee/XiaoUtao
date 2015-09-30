@@ -22,6 +22,8 @@
 @property(strong, nonatomic)NSNumber *goodsNumber;
 //帖子图片
 @property(strong, nonatomic)NSArray *goodsPictures;
+//帖子状态
+@property(strong, nonatomic)NSNumber *postStatus;
 
 //物品类型
 @property(strong, nonatomic)NSNumber *postGoodsType;
