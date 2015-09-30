@@ -24,7 +24,8 @@
 @property(copy, nonatomic)NSString *shopAdress;
 //点赞的数量
 @property(strong, nonatomic)NSNumber *shopFavour;
-
+//小店的描述
+@property(copy, nonatomic)NSString *shopDescription;
 //关联
 //管理者，开店的用户
 @property(strong, nonatomic)User *manager;

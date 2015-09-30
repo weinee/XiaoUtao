@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Shop.h"
 @interface RegistShop : UIViewController<UITextFieldDelegate>
 {
     UIImageView *_headshot;//头像视图
@@ -18,4 +19,5 @@
     UITextField *_shopDescription;//店铺描述
     UIButton *_btnRunForFree;//开店按钮
 }
+@property(nonatomic,retain)Shop *modelShop;//店铺的模板
 @end
