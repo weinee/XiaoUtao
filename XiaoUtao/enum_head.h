@@ -5,7 +5,6 @@
 //  Created by 费惠 on 15/9/29.
 //  Copyright (c) 2015年 weinee. All rights reserved.
 //
-#import "UIViewExt.h"
 
 
 #ifndef XiaoUtao_enum_h

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "enum_head.h"
 @interface RegistShop : UIViewController<UITextFieldDelegate>
 {
     UIImageView *_headshot;//头像视图

@@ -26,36 +26,40 @@
 {
     
     //创建头像图视图
-    _headshot=[[UIImageView alloc] initWithFrame:CGRectMake(WIDTH/2-30, 120, 90, 120)];
-    //设置默认图片
-    _headshot.image=[UIImage imageNamed:@"headshot_default.png"];
+    _headshot=[[UIImageView alloc] initWithFrame:CGRectMake(WIDTH/2-20, 120, 100, 120)];
+//    //设置默认图片
+//    _headshot.image=[UIImage imageNamed:@"headshot_default.png"];
     //设置圆角
     _headshot.layer.cornerRadius=5;
     //设置裁剪
     _headshot.layer.masksToBounds=YES;
     //设置描边
-    _headshot.layer.borderColor=[UIColor grayColor].CGColor;
+    _headshot.layer.borderColor=[UIColor whiteColor].CGColor;
     _headshot.layer.borderWidth=4;
     [self.view addSubview:_headshot];
+    //头像视图内部放照片
+    UIImageView *photoImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 95, 115)];
+    photoImageView.image=[UIImage imageNamed:@"headshot_default.png"];
+    [_headshot addSubview:photoImageView];
     
     //创建提示标签
-    _labTip=[[UILabel alloc] initWithFrame:CGRectMake(WIDTH/2-10, _headshot.bottom+5, 150, 40)];
+    _labTip=[[UILabel alloc] initWithFrame:CGRectMake(WIDTH/2-55, _headshot.bottom+5, 200, 40)];
     _labTip.text=@"设置你的U店铺LOGO";
-    _labTip.textColor=[UIColor grayColor];
+    _labTip.textColor=[UIColor colorWithRed:195/255 green:155/255 blue:155/255 alpha:0.5];
     [self.view addSubview:_labTip];
     
     //创建视图
-    _txtView=[[UIView alloc] initWithFrame:CGRectMake(0, 250, WIDTH, 80)];
+    _txtView=[[UIView alloc] initWithFrame:CGRectMake(0, _labTip.bottom+5, WIDTH, 80)];
     _txtView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:_txtView];
     
     //创建文本框
-    _shopName=[[UITextField alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 39)];
+    _shopName=[[UITextField alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 39.9)];
     _shopName.placeholder=@"你的U店铺名称";
     [_txtView addSubview:_shopName];
     
     //下划线
-    UIView *underline=[[UIView alloc] initWithFrame:CGRectMake(2, 39, WIDTH-4, 2)];
+    UIView *underline=[[UIView alloc] initWithFrame:CGRectMake(2, 39.9, WIDTH-4, 0.2)];
     underline.backgroundColor=[UIColor grayColor];
     [_txtView addSubview:underline];
     
