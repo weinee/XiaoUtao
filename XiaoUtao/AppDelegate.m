@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "RegistShop.h"
+#import "RootDrawerController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
-    self.window.rootViewController=[[RegistShop alloc] init];
+	
+	RootDrawerController *rdc = [[RootDrawerController alloc] init];
+	self.window.rootViewController = rdc;
+	
 	return YES;
 }
 

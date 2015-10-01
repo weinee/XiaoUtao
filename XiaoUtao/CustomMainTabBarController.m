@@ -7,7 +7,14 @@
 //
 
 #import "CustomMainTabBarController.h"
+#import "BaseNavigationController.h"
 
+#import "MeViewController.h"
+#import "SHViewController.h"
+#import "SBViewController.h"
+#import "IMViewController.h"
+#import <MMDrawerController.h>
+#import <MMDrawerVisualState.h>
 @interface CustomMainTabBarController ()
 
 @end
@@ -16,7 +23,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	//图片数组
+	NSArray *imageList = @[[UIImage imageNamed:@"menuClose.png"],[UIImage imageNamed:@"menuUsers.png"], [UIImage imageNamed:@"menuChat"], [UIImage imageNamed:@"menuMap.png"]];
+	//创建并将图片添加到sideBar上
+	self.sideBar = [[SideBarController alloc] initWithImages:imageList];
+	//代理
+	self.sideBar.delegate = self;
+	
+	[self.sideBar insertMenuButtonOnView:self.view anPosition:CGPointMake(WIDTH-55, 80)];
+	
+//	创建
+	BaseNavigationController *SHnvc = [[BaseNavigationController alloc] initWithRootViewController:[[SHViewController alloc] init]];
+	BaseNavigationController *SBnvc = [[BaseNavigationController alloc] initWithRootViewController:[[SBViewController alloc] init]];
+	BaseNavigationController *IMnvc = [[BaseNavigationController alloc] initWithRootViewController:[[IMViewController alloc] init]];
+	
+	self.viewControllers = @[SHnvc, SBnvc, IMnvc];
+//	隐藏tabBar
+	self.tabBar.hidden = YES;
+}
+
+#pragma mark - CDSideBarController delegate
+
+- (void)menuButtonClicked:(NSInteger)index{
+	self.selectedIndex = index;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	self.view.backgroundColor = [UIColor redColor];
+	self.navigationItem.title = @"二手货";
+	
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 30)];
+	label.text = @"二手货";
+	[self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {

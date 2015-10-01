@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SideBarController.h"
 
-@interface CustomMainTabBarController : UITabBarController
-
+@interface CustomMainTabBarController : UITabBarController<SideBarControllerDelegate>
+@property(strong,nonatomic)SideBarController *sideBar;//侧导航栏
+@property(strong,nonatomic)UITableView *tableView;
 @end

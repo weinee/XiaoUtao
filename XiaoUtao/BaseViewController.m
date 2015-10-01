@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import <UIViewController+MMDrawerController.h>
 @interface BaseViewController ()
 
 @end
@@ -16,14 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	
+	
+//	设置头像， 作为一个按钮
+	UIImage* img=[UIImage imageNamed:@"me"];
+	UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+	btn.frame =CGRectMake(10, -4, 43, 43);
+	[btn setBackgroundImage:img forState:UIControlStateNormal];
+	[btn addTarget: self action: @selector(leftButtonClick:) forControlEvents: UIControlEventTouchUpInside];
+	[self.navigationController.navigationBar addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark -ButtonClickAction
+- (void)leftButtonClick:(UIButton *)btn
+{
+	//调用菜单控制器打开左侧视图的方法(如果当前状态是打开状态，它执行关闭事件)
+//	viewcontroller的类目方法
+	[self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

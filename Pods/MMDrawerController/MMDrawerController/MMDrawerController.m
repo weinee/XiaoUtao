@@ -107,6 +107,7 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
     for(UIView * subview in [view subviews]){
         if([view isKindOfClass:[UINavigationBar class]]){
             navBar = (UINavigationBar*)view;
+//			navBar.hidden = YES;
             break;
         }
         else {
