@@ -19,7 +19,7 @@
 //小店开业状态
 @property(strong, nonatomic)NSNumber *shopStatus;
 //小店logo
-@property(strong, nonatomic)BmobFile *shopPicture;
+@property(copy, nonatomic)NSString *shopPicture;
 //小店详细地址
 @property(copy, nonatomic)NSString *shopAdress;
 //点赞的数量

@@ -15,7 +15,7 @@
 //库存
 @property(strong, nonatomic)NSNumber *goodsStock;
 //商品图片
-@property(strong, nonatomic)BmobFile *goodsPicture;
+@property(copy, nonatomic)NSString *goodsPicture;
 //商品介绍
 @property(copy, nonatomic)NSString *goodsInfo;
 //商品类型
