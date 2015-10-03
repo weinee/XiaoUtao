@@ -48,7 +48,6 @@
 	}];
 	
 
-
 //	[self
 //	 setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
 //		 MMDrawerControllerDrawerVisualStateBlock block;

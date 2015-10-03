@@ -11,6 +11,7 @@
 		01F2C3331BBB711E00BCD15F /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2C3321BBB711E00BCD15F /* UIViewExt.m */; };
 		01F2C3361BBBB75100BCD15F /* head_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3351BBBB75100BCD15F /* head_photo.png */; };
 		01F2C3381BBBC55400BCD15F /* cinema.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3371BBBC55400BCD15F /* cinema.png */; };
+		781395C41BBEC1EF0058A136 /* SchoolLocation_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 781395C31BBEC1EF0058A136 /* SchoolLocation_json.json */; };
 		7827DF651BBBFE3A00375D00 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF641BBBFE3A00375D00 /* SBViewController.m */; };
 		7827DF681BBBFE4600375D00 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF671BBBFE4600375D00 /* IMViewController.m */; };
 		7827DF6B1BBC379B00375D00 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF6A1BBC379B00375D00 /* SMViewController.m */; };
@@ -79,6 +80,7 @@
 		01F2C3351BBBB75100BCD15F /* head_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head_photo.png; sourceTree = "<group>"; };
 		01F2C3371BBBC55400BCD15F /* cinema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinema.png; sourceTree = "<group>"; };
 		1461A726DC1813575D195523 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		781395C31BBEC1EF0058A136 /* SchoolLocation_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolLocation_json.json; sourceTree = "<group>"; };
 		7827DF631BBBFE3A00375D00 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		7827DF641BBBFE3A00375D00 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
 		7827DF661BBBFE4600375D00 /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				784777E51BB9281100F0A3EA /* AppDelegate.m */,
 				784777E71BB9281100F0A3EA /* ViewController.h */,
 				784777E81BB9281100F0A3EA /* ViewController.m */,
+				781395C31BBEC1EF0058A136 /* SchoolLocation_json.json */,
 				784777EA1BB9281100F0A3EA /* Main.storyboard */,
 				784777ED1BB9281100F0A3EA /* Images.xcassets */,
 				784777EF1BB9281100F0A3EA /* LaunchScreen.xib */,
@@ -500,6 +503,7 @@
 				784777EE1BB9281100F0A3EA /* Images.xcassets in Resources */,
 				785C97F61BBCF21600CF489D /* menuIcon.png in Resources */,
 				785C97F31BBCF21600CF489D /* menuClose.png in Resources */,
+				781395C41BBEC1EF0058A136 /* SchoolLocation_json.json in Resources */,
 				785C97F51BBCF21600CF489D /* menuUsers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

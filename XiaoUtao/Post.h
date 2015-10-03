@@ -20,7 +20,7 @@
 @property(strong, nonatomic)NSNumber *goodsPrice;
 //出售物品数量
 @property(strong, nonatomic)NSNumber *goodsNumber;
-//帖子图片
+//帖子图片, url（上传图片时，返回的BmobFile类型中url属性）数组
 @property(strong, nonatomic)NSArray *goodsPictures;
 //帖子状态
 @property(strong, nonatomic)NSNumber *postStatus;

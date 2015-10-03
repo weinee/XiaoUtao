@@ -7,7 +7,8 @@
 //
 
 #import "IMViewController.h"
-
+#import <BmobProFile.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface IMViewController ()
 
 @end
@@ -17,7 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor blueColor];
-	self.title = @"通信";
+	self.navigationItem.title = @"通信";
+	
+//	NSString *path = [[NSBundle mainBundle] pathForResource:@"me.png" ofType:nil];
+//	[BmobProFile uploadFileWithPath:path block:^(BOOL isSuccessful, NSError *error, NSString *filename, NSString *url, BmobFile *file) {
+//		if (!isSuccessful) {
+//			NSLog(@"%@", error);
+//		}
+//		else{
+//			NSLog(@"fileName = %@, url = %@, BmobFile = %@", filename, url, file);
+//		}
+//	} progress:^(CGFloat progress) {
+//		NSLog(@"--%lf", progress);
+//	}];
+	
+//	UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+//	[iv sd_setImageWithURL:[NSURL URLWithString:@"http://file.bmob.cn/M02/E1/01/oYYBAFYN6luAAGAwAAAPyg2WwvQ966.png"] placeholderImage:nil];
+//	[self.view addSubview:iv];
 }
 
 - (void)didReceiveMemoryWarning {

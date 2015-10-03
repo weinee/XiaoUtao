@@ -9,6 +9,6 @@
 #import "User.h"
 
 @implementation User
-@synthesize userAge, userSex, avatar, isShoper, userLocation, userSchool;
+@synthesize userAge, userSex, avatar, isShoper, userLocation, userSchool, userSchoolNum;
 
 @end

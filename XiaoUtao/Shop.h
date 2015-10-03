@@ -18,7 +18,7 @@
 @property(copy, nonatomic)NSString *shopNotice;
 //小店开业状态
 @property(strong, nonatomic)NSNumber *shopStatus;
-//小店logo
+//小店logo，url（上传图片时，返回的BmobFile类型中url属性）数组
 @property(copy, nonatomic)NSString *shopPicture;
 //小店详细地址
 @property(copy, nonatomic)NSString *shopAdress;

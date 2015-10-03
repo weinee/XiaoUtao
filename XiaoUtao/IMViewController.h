@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import <BmobSDK/Bmob.h>
 @interface IMViewController : BaseViewController
 
 @end

@@ -12,12 +12,14 @@
 @property(copy, nonatomic)NSString *userSex;
 //使用数字类
 @property(strong, nonatomic)NSNumber *userAge;
-//头像
+//头像，url
 @property(copy, nonatomic)NSString *avatar;
 //是否开店
 @property(assign, nonatomic)BOOL *isShoper;
 //地理位置,经纬度
 @property(strong, nonatomic)BmobGeoPoint *userLocation;
 //用户所在学校
-@property(strong, nonatomic)NSString *userSchool;
+@property(copy, nonatomic)NSString *userSchool;
+//用户所在学校编号
+@property(strong, nonatomic)NSNumber *userSchoolNum;
 @end

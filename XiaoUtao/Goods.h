@@ -14,7 +14,7 @@
 @property(strong, nonatomic)NSNumber *goodsPrice;
 //库存
 @property(strong, nonatomic)NSNumber *goodsStock;
-//商品图片
+//商品图片，url（上传图片时，返回的BmobFile类型中url属性）数组
 @property(copy, nonatomic)NSString *goodsPicture;
 //商品介绍
 @property(copy, nonatomic)NSString *goodsInfo;
