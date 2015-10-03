@@ -30,7 +30,7 @@
 	//代理
 	self.sideBar.delegate = self;
 	
-	[self.sideBar insertMenuButtonOnView:self.view anPosition:CGPointMake(WIDTH-55, 80)];
+	
 	
 //	创建
 	BaseNavigationController *SHnvc = [[BaseNavigationController alloc] initWithRootViewController:[[SHViewController alloc] init]];
@@ -40,6 +40,9 @@
 	self.viewControllers = @[SHnvc, SBnvc, IMnvc];
 //	隐藏tabBar
 	self.tabBar.hidden = YES;
+	
+//	添加自定义的边缘tabBar
+	[self.sideBar insertMenuButtonOnView:self.view anPosition:CGPointMake(WIDTH-55, 30)];
 }
 
 #pragma mark - CDSideBarController delegate

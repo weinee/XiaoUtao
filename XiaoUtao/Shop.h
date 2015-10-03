@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <BmobSDK/Bmob.h>
 #import "User.h"
+#import "School.h"
 @interface Shop : BmobObject
 
 @property(copy, nonatomic)NSString *shopName;
@@ -31,4 +32,6 @@
 @property(strong, nonatomic)User *manager;
 //关注的用户
 @property(strong, nonatomic)BmobRelation *focus;
+//所属学校
+@property(strong, nonatomic)School *shopSchool;
 @end

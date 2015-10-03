@@ -11,6 +11,8 @@
 		01F2C3331BBB711E00BCD15F /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2C3321BBB711E00BCD15F /* UIViewExt.m */; };
 		01F2C3361BBBB75100BCD15F /* head_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3351BBBB75100BCD15F /* head_photo.png */; };
 		01F2C3381BBBC55400BCD15F /* cinema.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F2C3371BBBC55400BCD15F /* cinema.png */; };
+		780AC9711BBF7BCD003993F2 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780AC9701BBF7BCD003993F2 /* LocationController.m */; };
+		780AC9741BBF88F6003993F2 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = 780AC9731BBF88F6003993F2 /* School.m */; };
 		781395C41BBEC1EF0058A136 /* SchoolLocation_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 781395C31BBEC1EF0058A136 /* SchoolLocation_json.json */; };
 		7827DF651BBBFE3A00375D00 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF641BBBFE3A00375D00 /* SBViewController.m */; };
 		7827DF681BBBFE4600375D00 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827DF671BBBFE4600375D00 /* IMViewController.m */; };
@@ -80,6 +82,10 @@
 		01F2C3351BBBB75100BCD15F /* head_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head_photo.png; sourceTree = "<group>"; };
 		01F2C3371BBBC55400BCD15F /* cinema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinema.png; sourceTree = "<group>"; };
 		1461A726DC1813575D195523 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		780AC96F1BBF7BCD003993F2 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		780AC9701BBF7BCD003993F2 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		780AC9721BBF88F6003993F2 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
+		780AC9731BBF88F6003993F2 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
 		781395C31BBEC1EF0058A136 /* SchoolLocation_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolLocation_json.json; sourceTree = "<group>"; };
 		7827DF631BBBFE3A00375D00 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		7827DF641BBBFE3A00375D00 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
@@ -237,6 +243,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		780AC96C1BBF72A8003993F2 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				785C97E61BBCC08200CF489D /* RootDrawerController.h */,
+				785C97E71BBCC08200CF489D /* RootDrawerController.m */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		780AC96D1BBF72CE003993F2 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				78EFF0441BBBAE3900AE90BE /* CustomMainTabBarController.h */,
+				78EFF0451BBBAE3900AE90BE /* CustomMainTabBarController.m */,
+				785C97E91BBCED8400CF489D /* SideBarController.h */,
+				785C97EA1BBCED8400CF489D /* SideBarController.m */,
+			);
+			name = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		780AC96E1BBF79A5003993F2 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				780AC96F1BBF7BCD003993F2 /* LocationController.h */,
+				780AC9701BBF7BCD003993F2 /* LocationController.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		784777D41BB9281100F0A3EA = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +297,7 @@
 			children = (
 				78EFF0401BBBABCF00AE90BE /* BaseClass */,
 				784778061BB92E8E00F0A3EA /* Model */,
+				780AC96E1BBF79A5003993F2 /* Location */,
 				78EFF03D1BBBAAE200AE90BE /* ME */,
 				78EFF03B1BBBAA6C00AE90BE /* SH */,
 				01F2C3291BBB70B100BCD15F /* SM */,
@@ -310,16 +346,18 @@
 		784778061BB92E8E00F0A3EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				784778161BB946D800F0A3EA /* Post.h */,
-				784778171BB946D800F0A3EA /* Post.m */,
 				784778181BB946D800F0A3EA /* User.h */,
 				784778191BB946D800F0A3EA /* User.m */,
+				784778161BB946D800F0A3EA /* Post.h */,
+				784778171BB946D800F0A3EA /* Post.m */,
 				7847780D1BB930DD00F0A3EA /* Shop.h */,
 				7847780E1BB930DD00F0A3EA /* Shop.m */,
 				784778101BB9322E00F0A3EA /* Goods.h */,
 				784778111BB9322E00F0A3EA /* Goods.m */,
 				784778131BB9386200F0A3EA /* Order.h */,
 				784778141BB9386200F0A3EA /* Order.m */,
+				780AC9721BBF88F6003993F2 /* School.h */,
+				780AC9731BBF88F6003993F2 /* School.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -387,17 +425,13 @@
 		78EFF0401BBBABCF00AE90BE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				780AC96D1BBF72CE003993F2 /* CustomTabBar */,
+				780AC96C1BBF72A8003993F2 /* Drawer */,
 				785C97EC1BBCF20E00CF489D /* image */,
-				785C97E61BBCC08200CF489D /* RootDrawerController.h */,
-				785C97E71BBCC08200CF489D /* RootDrawerController.m */,
 				78EFF0411BBBAD1300AE90BE /* BaseViewController.h */,
 				78EFF0421BBBAD1300AE90BE /* BaseViewController.m */,
 				78EFF0471BBBAE9300AE90BE /* BaseNavigationController.h */,
 				78EFF0481BBBAE9400AE90BE /* BaseNavigationController.m */,
-				78EFF0441BBBAE3900AE90BE /* CustomMainTabBarController.h */,
-				78EFF0451BBBAE3900AE90BE /* CustomMainTabBarController.m */,
-				785C97E91BBCED8400CF489D /* SideBarController.h */,
-				785C97EA1BBCED8400CF489D /* SideBarController.m */,
 			);
 			name = BaseClass;
 			sourceTree = "<group>";
@@ -560,6 +594,7 @@
 				7827DF651BBBFE3A00375D00 /* SBViewController.m in Sources */,
 				01F2C32F1BBB70DB00BCD15F /* RegistShop.m in Sources */,
 				78EFF04C1BBBAEF200AE90BE /* MeViewController.m in Sources */,
+				780AC9711BBF7BCD003993F2 /* LocationController.m in Sources */,
 				78EFF0431BBBAD1300AE90BE /* BaseViewController.m in Sources */,
 				01F2C3331BBB711E00BCD15F /* UIViewExt.m in Sources */,
 				785C97E81BBCC08200CF489D /* RootDrawerController.m in Sources */,
@@ -569,6 +604,7 @@
 				784777E31BB9281100F0A3EA /* main.m in Sources */,
 				7827DF6B1BBC379B00375D00 /* SMViewController.m in Sources */,
 				78EFF0461BBBAE3900AE90BE /* CustomMainTabBarController.m in Sources */,
+				780AC9741BBF88F6003993F2 /* School.m in Sources */,
 				7847780F1BB930DD00F0A3EA /* Shop.m in Sources */,
 				784778151BB9386200F0A3EA /* Order.m in Sources */,
 				784778121BB9322E00F0A3EA /* Goods.m in Sources */,

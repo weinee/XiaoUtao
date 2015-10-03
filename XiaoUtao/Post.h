@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <BmobSDK/Bmob.h>
 #import "User.h"
-
+#import "School.h"
 @interface Post : BmobObject
 @property(copy, nonatomic)NSString *postTitle;
 //帖子内容
@@ -35,4 +35,6 @@
 @property(strong, nonatomic)User *author;
 //收藏
 @property(strong, nonatomic)BmobRelation *collect;
+//所属学校
+@property(strong, nonatomic)School *postSchool;
 @end

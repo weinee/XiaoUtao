@@ -9,5 +9,5 @@
 #import "Shop.h"
 
 @implementation Shop
-@synthesize shopName, shopNotice, shopOpenTime, shopPicture, shopStatus, manager, focus, shopAdress, shopFavour,shopDescription;
+@synthesize shopName, shopNotice, shopOpenTime, shopPicture, shopStatus, manager, focus, shopAdress, shopFavour, shopDescription, shopSchool;
 @end
